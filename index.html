@@ -3,22 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/carrusel.css">
+    <script defer src="js/carrusel.js"></script>
+    <script src="js/navbar.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Marey Ilustradora</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td><a href="nav">Sobre mi</a></td>
-            <td><a href="nav">Contacto</a></td>
-            <td><a href="nav">Encargos</a></td>
-
-        </tr>
-    </table>
-
-    <h1>Marey Vaitiare</h1>
-    <h2>ilustradora a tiempo completo, precios en la descripción :3</h2>
-
-    <h3>la maja desnuda</h3>
-    <img src="img/majadesn.jpg" alt="">
+    <p data-item='Vaitiart'>Vaitiart</p>
+    
+    <section>
+      <div>Ilustradora</div>
+      <nav>
+        <ul class="menuItems">
+          <li><a href='#' data-item='Home'>Home</a></li>
+          <li><a href='#' data-item='About'>About</a></li>
+          <li><a href='#' data-item='Projects'>Projects</a></li>
+          <li><a href='#' data-item='Blog'>Blog</a></li>
+          <li><a href='#' data-item='Contact'>Contact</a></li>
+        </ul>
+      </nav>
+    
+    </section>
+  
+    <section id="container-slider">    
+        <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+          <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+          <li><a itlist="itList_1" href="#"></a></li>
+          <li><a itlist="itList_2" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+          <li style="background-image: url('img/majadesn.jpg'); z-index:0; opacity: 1;">
+            <div class="content_slider" >
+              <div>
+                <h2>pelele</h2>
+            <p>100€.</p>
+            <a href="img/majadesn.jpg" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+          <li style="background-image: url('img/majadesn.jpg'); ">
+            <div class="content_slider" >
+              <div>
+                <h2>Maja desnuda</h2>
+            <p>200€.</p>
+            <a href="img/majadesn.jpg" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+          <li style="background-image: url('img/majadesn.jpg'); ">
+            <div class="content_slider" >
+              <div>
+                <h2>Mojito</h2>
+            <p>300€</p>
+            <a href="img/majadesn.jpg" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+       </ul>
+     </section>
+      
 </body>
 </html>
